@@ -14,9 +14,58 @@
 */
 
 /* Table Styles */
+/* Table has a background of linear gradient,which created an image consisting of a progressive transition, and added in a 5 pixel, solid, gray border. */
+table {
+    background: linear-gradient(rgb(190, 215, 255), black);
+    border: 5px solid gray;
+}
 
+/* For every th and td in a table a solid, gray, 3px border was added with a line-height of 1.4em and a padding of 8 pixels. */
+table#pricing th,
+table#pricing td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+/* For the table headers a background color of black was added with a light blue text color of rgb(130, 210, 255) and with the font-weight being normal. */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+/* For the table datas a text color of white was added with the font-size being 0.9em and the text-align to top in order to align the cell text with the top of the cell. */
+td {
+    color: white;
+    font-size: 0.9em;
+    text-align: top;
+}
 
 /* Column Styles */
+/* A style rule for col with a ID of firstCol was set to have a width of 24%. */
+col#firstCol {
+    width: 24%;
+}
 
+/* A style rule for col with a ID of dataCols was set to a width of 19%. */
+col.dataCols {
+    width: 19%;
+}
 
 /* Table Header Styles */
+/* For every tr with the thead had a height set to 60 pixels. */
+thead>tr {
+    height: 60px;
+}
+
+/* For the first table header elements within the first table row of the thead group a style rule was created to set its font-size to 2em. */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+
+/* For the first table header elements inside of the first table row of the thead, that were not the first heading cell a style rule was added of a background color of transparent and a text color to black. */
+thead tr:first-of-type th:not(:first-of-type) {
+    background: transparent;
+    color: black;
+}
